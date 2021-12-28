@@ -1,0 +1,72 @@
+@use 'variables' as *;
+
+@media (max-width: 991px) {
+    html 
+    {
+        font-size: 55%;
+    }
+
+    header,
+    section,
+    footer
+    {
+        padding: 2rem;
+    }
+
+    .hero__content
+    {
+        margin: 0 2rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .header
+    {
+        &__navbar
+        {
+            position: absolute;
+            top: 99%;
+            left: 0;
+            background: $white;
+            width: 100%;
+            border-top: 1px solid $light-gray;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+
+        &__navbar.active
+        {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        &__menu
+        {
+            display: block;
+        }
+
+        &__menu-item 
+        {
+            padding: 2.2rem;
+            margin: 0;
+            text-align: center;
+
+
+            &:hover 
+            {
+                background: $list-hover;
+            }
+        }
+
+        &__menu-mobile
+        {
+            display: block;
+        }
+    }
+
+    .hero 
+    {
+        margin-top: 8rem;
+    }
+
+
+}

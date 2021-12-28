@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+.servicos 
+{
+    .box 
+    {
+        flex: 1 1 30rem;
+        background: $pink;
+        text-align: center;
+        font-size: 3rem;
+        color: $white;
+        padding: 3rem;
+    }
+
+    .heading span 
+    {
+        color: $pink;
+    }
+}

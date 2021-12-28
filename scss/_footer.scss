@@ -1,0 +1,71 @@
+@use 'variables' as *;
+
+.footer 
+{
+    padding-bottom: 0;
+
+    .flex-container 
+    {
+        align-items: flex-start;
+    }
+
+    .box
+    {
+        flex: 1 1 30rem;
+    }
+
+    &__title
+    {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__item
+    {
+        margin-top: 1rem;
+    }
+
+    &__link
+    {
+        text-transform: capitalize;
+        color: $black;
+
+        &:hover 
+        {
+            margin-left: .5rem;
+        }
+    }
+
+    i 
+    {
+        color: $blue;
+        margin-right: .5rem;
+    }
+
+    &__info:last-child
+    {
+        margin-top: 1rem;
+    }
+
+    &__social
+    {
+        display: block;
+        margin-top: .5rem;
+        color: $black;
+
+        &:hover 
+        {
+            margin-left: .5rem;
+        }
+    }
+
+    &__direitos
+    {
+        text-align: center;
+        margin-top: 2rem;
+        padding: 1rem;
+        border-top: .1rem solid $light-gray;
+        font-size: 1.4rem;
+        color: $light-gray;
+    }
+}

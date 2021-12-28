@@ -1,0 +1,111 @@
+@use 'variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+*, button
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+a 
+{
+    text-decoration: none;
+    color: $white;
+}
+
+html 
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    transition: all .3s ease;
+}
+
+body 
+{
+    font-size: 1.6rem;
+    color: $black;
+}
+
+header,
+section,
+footer 
+{
+    padding: 2rem 9%;
+}
+
+
+section:nth-child(even)
+{
+    background: rgb(240, 240, 240);
+}
+
+.btn 
+{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    padding: .8rem 2.4rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: .5rem;
+    background: $pink;
+    color: $white;
+    cursor: pointer;
+    transition: all .2s;
+
+    i 
+    {
+        margin-left: 1rem;
+    }
+
+    &:hover
+    {
+        letter-spacing: .2rem;
+    }
+
+}
+
+.heading
+{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    font-weight: 400;
+
+    span 
+    {
+        color: $blue;
+        border-bottom: .6rem solid ;
+    }
+}
+
+.flex-container 
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .box 
+    {
+        flex: 1 1 42rem;
+    }
+}
+
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}

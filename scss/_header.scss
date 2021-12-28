@@ -1,0 +1,62 @@
+@use 'variables' as *;
+
+.header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    background: $white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: $box-shadow;
+
+    &__brand 
+    {
+        font-size: 2.5rem;
+        font-weight: 400;
+
+        i 
+        {
+            margin-right: 1rem;
+        }
+
+        span 
+        {
+            color: $pink;
+        }
+    }
+
+    &__menu
+    {
+        display: flex;
+    }
+
+    &__menu-item 
+    {
+        margin-left: 2.5rem;
+    }
+
+    &__menu-link 
+    {
+        font-size: 1.7rem;
+        color: $black;
+        text-transform: capitalize;
+
+        &:hover 
+        {
+            color: $pink;
+        }
+    }
+
+    &__menu-mobile
+    {
+        font-size: 2.5rem;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        display: none;
+    }
+}

@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+.sobre 
+{
+    &__title 
+    {
+        font-size: 3.4rem;
+        color: $black;
+    }
+
+    &__desc
+    {
+        margin: 1rem 0;
+    }
+
+    .btn 
+    {
+        background: $blue;
+    }
+}
